@@ -20,9 +20,9 @@ Java is a set of computer software and specifications developed by James Gosling
 # Original author(s)	James Gosling, Sun Microsystems
 # Developer(s)	Oracle Corporation
 
-# Operating system	Microsoft Windows, Solaris, Linux, macOS
+ Operating system	Microsoft Windows, Solaris, Linux, macOS
 
-# Platform	IA-32, x64, ARMv7, ARMv8, SPARC (up to Java 14) (Java 8 includes 32-bit support – while no longer supported freely by Oracle for commercial use – 32-bit   platforms are not supported in other versions, since dropped officially in Java 10.)
+ Platform	IA-32, x64, ARMv7, ARMv8, SPARC (up to Java 14) (Java 8 includes 32-bit support – while no longer supported freely by Oracle for commercial use – 32-bit   platforms are not supported in other versions, since dropped officially in Java 10.)
 
-# Available in	English, Chinese, French, German, Italian, Japanese, Korean, Portuguese, Spanish, Swedish
+ Available in	English, Chinese, French, German, Italian, Japanese, Korean, Portuguese, Spanish, Swedish
 
