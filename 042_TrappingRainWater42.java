@@ -1,126 +1,113 @@
-/**
- * Given n non-negative integers representing an elevation map where the width
- * of each bar is 1, compute how much water it is able to trap after raining.
- *
- * For example,
- * Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
- *
- * http://www.leetcode.com/static/images/problemset/rainwatertrap.png
- *
- * The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1].
- * In this case, 6 units of rain water (blue section) are being trapped.
- */
-
-public class TrappingRainWater42 {
-
-    /**
-     * https://leetcode.com/problems/trapping-rain-water/solution/
-     */
-    // brute force
+class Solution {
     public int trap(int[] height) {
-        int res = 0;
-        for (int i=1; i<height.length-1; i++) {
-            int l = 0;
-            int r = 0;
-            for (int j = i; j >= 0; j--) l = Math.max(l, height[j]);
-            for (int j = i; j < height.length; j++) r = Math.max(r, height[j]);
-            res += Math.min(l, r) - height[i];
-        }
-        return res;
+        
+        int water = 0;
+        
+        if(height.length == 0) return water;
+        
+        int[] leftMax = new int[height.length];
+        int[] rightMax = new int[height.length];
+        
+        leftMax[0] = height[0];
+        for(int i = 1; i < height.length; i++)
+            leftMax[i] = Math.max(leftMax[i-1], height[i]);
+        
+        rightMax[height.length-1] = height[height.length-1];
+        for(int i = height.length-2; i >= 0; i--)
+            rightMax[i] = Math.max(rightMax[i+1], height[i]);
+        
+        for(int i = 0; i < height.length; i++)
+            water += Math.min(leftMax[i], rightMax[i]) - height[i];
+        
+        return water;
     }
-
-    public int trap2(int[] height) {
-        if (height.length <= 2) {
+}
+******************************************************************
+class Solution {
+    public int trap(int[] height) {
+        int len=height.length;
+        if(len<2)
             return 0;
+        int[] left_max=new int[len];
+        int[] right_max=new int[len];
+        int result=0;
+        left_max[0]=height[0];
+        for(int i=1;i<len;i++)
+            left_max[i]=Math.max(left_max[i-1],height[i]);
+        right_max[len-1]=height[len-1];
+        for(int i=len-2;i>=0;i--)
+            right_max[i]=Math.max(right_max[i+1],height[i]);
+        for(int i=0;i<len;i++)
+        {
+            result+=Math.min(left_max[i],right_max[i])-height[i];
         }
-
-        Stack<Integer> st = new Stack<>();
-        st.push(0);
-        int p = 1;
-
-        int sum = 0;
-        while(p < height.length) {
-            while(!st.empty() && height[p] > height[st.peek()]) {
-                Integer now = st.pop();
-                if (st.empty()) {
-                    break;
-                }
-                sum += (Math.min(height[p], height[st.peek()]) - height[now]) * (p-st.peek()-1);
-            }
-            st.push(p++);
-        }
-
-        return sum;
+        return result;
     }
+}
 
-    /**
-     * https://discuss.leetcode.com/topic/3016/share-my-short-solution
-     */
-    public int trap3(int[] A){
-        int a=0;
-        int b=A.length-1;
-        int max=0;
-        int leftmax=0;
-        int rightmax=0;
-        while(a<=b){
-            leftmax=Math.max(leftmax,A[a]);
-            rightmax=Math.max(rightmax,A[b]);
-            if(leftmax<rightmax){
-                max+=(leftmax-A[a]);       // leftmax is smaller than rightmax, so the (leftmax-A[a]) water can be stored
-                a++;
+
+******************************************************************
+
+class Solution {
+    public int trap(int[] height) {
+         //two pointer approach  
+        int size = height.length;
+        if(size<3)
+            return 0;
+        int totalWater=0;
+        int i = 0;
+        int j = size-1;
+        int lMax=height[0];
+        int rMax=height[size-1];
+        while(i<=j){
+            lMax=Math.max(lMax,height[i]);
+            rMax=Math.max(rMax,height[j]);
+            if(lMax>=rMax){
+                totalWater=totalWater+(rMax-height[j]);
+                j=j-1;
             }
-            else{
-                max+=(rightmax-A[b]);
-                b--;
+            else if(rMax>lMax){
+                totalWater=totalWater+(lMax-height[i]);
+                i=i+1;
             }
         }
-        return max;
+        return totalWater;
     }
+}
 
+*************************************************************
 
-    /**
-     * https://leetcode.com/problems/trapping-rain-water/solution/
-     */
-    // DP
-    public int trap4(int[] height) {
-        if (height == null || height.length <= 2) return 0;
+class Solution {
+public int trap(int[] height) {
+int n=height.length;
+int leftmax[]=new int[n];
+int rightmax[]= new int[n];
+if(n==0)
+return 0;
+leftmax[0]=height[0];
+rightmax[n-1]=height[n-1];
 
-        int res = 0;
-        int[] l = new int[height.length];
-        l[0] = height[0];
-        for (int i=1; i<height.length; i++) l[i] = Math.max(l[i-1], height[i]);
-
-        int[] r = new int[height.length];
-        r[height.length-1] = height[height.length-1];
-        for (int i=height.length-2; i>=0; i--) r[i] = Math.max(r[i+1], height[i]);
-
-        for (int i=1; i<height.length-1; i++) res += Math.min(l[i], r[i]) - height[i];
-
-        return res;
+    for(int i=1;i<n-1;i++)
+    {
+        if(height[i]>leftmax[i-1])
+            leftmax[i]=height[i];
+        else
+            leftmax[i]=leftmax[i-1];
     }
-
-
-    public int trap5(int[] height) {
-        if (height == null || height.length <= 2) return 0;
-
-        int res = 0;
-        int l = 1;
-        int r = 0;
-        Stack<Integer> st = new Stack<>();
-        while (l < height.length) {
-            if (height[l] > height[l-1] && !st.isEmpty()) {
-                int top = st.pop();
-                res += (l-top-1) * (Math.min(height[l], height[top]) - height[l-1]);
-
-            }
-
-            if (l <= height.length-3 && height[l] > height[l+1]) {
-                st.add(l);
-            }
-            l++;
-        }
-
-        return res;
+    
+    for(int j=n-2;j>=1;j--)
+    {
+        if(height[j]>rightmax[j+1])
+            rightmax[j]=height[j];
+        else
+            rightmax[j]=rightmax[j+1];
     }
-
+    int water=0;
+    for(int i=1;i<n-1;i++)
+    {
+        water+=Math.min(leftmax[i],rightmax[i])-height[i];
+    }
+    
+    return water; 
+}
 }
