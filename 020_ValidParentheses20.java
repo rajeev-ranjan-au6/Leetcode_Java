@@ -1,127 +1,202 @@
-/**
- * Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
- * determine if the input string is valid.
- *
- * The brackets must close in the correct order, "()" and "()[]{}" are all
- * valid but "(]" and "([)]" are not.
- */
-
-
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Stack;
-
-
-public class ValidParentheses20 {
+class Solution {
     public boolean isValid(String s) {
-        char[] chars = s.toCharArray();
-
-        Stack st = new Stack();
-
-        for (char c: chars) {
-
-            if (isBackP(c)) {
-                if (st.empty()) {
-                    return false;
-                } else {
-                    char top = (char) st.pop();
-                    if (c != top) {
-                        return false;
-                    }
-                }
-            } else {
-                st.push(pair(c));
+        Stack<Character> stack = new Stack<>();boolean check =false;
+        for(int i = 0 ; i < s.length(); i++){
+            if(stack.isEmpty()){
+            if(s.charAt(i) == ']' || s.charAt(i) == ')' || s.charAt(i) == '}'){
+                check = false;
+        		return check;
+               }
             }
-        }
-
-        return st.empty();
-    }
-
-    private boolean isBackP(char c) {
-        return c == '}' || c == ']' || c == ')';
-    }
-
-    private char pair(char c) {
-        if (c == '{') {
-            return '}';
-        } else if (c == '[') {
-            return ']';
-        } else {
-            return ')';
-        }
-    }
-
-
-    /**
-     * https://discuss.leetcode.com/topic/27572/short-java-solution
-     */
-    public boolean isValid2(String s) {
-      	Stack<Character> stack = new Stack<Character>();
-      	for (char c : s.toCharArray()) {
-        		if (c == '(')
-        			  stack.push(')');
-        		else if (c == '{')
-        			  stack.push('}');
-        		else if (c == '[')
-        			  stack.push(']');
-        		else if (stack.isEmpty() || stack.pop() != c)
-        			  return false;
-      	}
-      	return stack.isEmpty();
-    }
-
-
-
-    public boolean isValid3(String s) {
-        if (s == null || s.length()%2 == 1) return false;
-        if (s.length() == 0) return true;
-
-        Stack<Character> st = new Stack<>();
-        for (char c : s.toCharArray()) {
-            if (c == '(' || c == '[' || c == '{') {
-                st.push(c);
+            if(s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[' ){
+                stack.push(s.charAt(i));
                 continue;
             }
+            else{
+                char ch = s.charAt(i);
+        switch(ch){
+                
+//            -------------------------------------     
+            case ']':
+                if(!stack.isEmpty()){
+                if(stack.pop() == '['){
+                	check = true;
+                }
+            else{
+            	check = false;
+            	return check;
+            }
+                }
+                break;
+                
+//              --------------------------------   
+                
+            case '}':
+                if(!stack.isEmpty()){
+                if(stack.pop ()== '{'){
+                    check = true;
+                }
+        
+            else{
+            	check = false;
+            	return check;
+            }
+                }
+                break;
+//          ---------------------------       
+                
+            case ')':
+                if(!stack.isEmpty()){
+                if(stack.pop() == '('){
+                	check = true;
+                }
+    
+                else{
+                	check = false;
+                	return check;
+                }
+                }
+                    break;       
+//       ---------------------------------  
+        
+        }}}
+        if(!stack.isEmpty()) {
+        	check = false;
+        }
+                return check;
+        
+    }
+}
 
-            if (st.isEmpty()) return false;
 
-            switch (c) {
-                case ')':
-                    if (st.peek() == '(') {
-                        st.pop();
-                        break;
-                    } else {
-                        return false;
-                    }
-                case ']':
-                    if (st.peek() == '[') {
-                        st.pop();
-                        break;
-                    } else {
-                        return false;
-                    }
-                case '}':
-                    if (st.peek() == '{') {
-                        st.pop();
-                        break;
-                    } else {
-                        return false;
-                    }
-                default: return false;
+****************************************************************************************
+
+class Solution {
+    public boolean isValid(String str) {
+        
+		if(str == null || str.equals("") || str.length() == 1) {
+            return false;
+        }
+		
+        Stack<Character> s = new Stack<Character>();
+		
+		char[] chars = str.toCharArray();
+        for(int i=0; i< chars.length; i++) {
+            char c = chars[i];
+			
+            if(c == '(' || c == '[' || c == '{') {
+                s.push(c);
+                continue;
+            }
+            
+            if(s.isEmpty()) {
+                return false;
+            }
+            
+            if(c == ')') {
+                char top = s.peek();
+				if(top == '[' || top == '{') {
+                    return false;
+                }
+            } else if(c == ']') {
+                char top = s.peek();
+                if(top == '(' || top == '{') {
+                    return false;
+                }
+            } else if(c == '}') {
+                char top = s.peek();
+                if(top == '(' || top == '[') {
+                    return false;
+                }
+            }
+            s.pop();
+        }
+		
+        return s.isEmpty();
+    }
+}
+
+*********************************************************************************
+
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> st = new Stack<Character>();
+        if(s.length() ==1) return false;
+        for(int i=0; i<s.length(); i++){
+            char inChar = s.charAt(i);
+            if(inChar=='{'||inChar=='['||inChar=='('){
+                st.push(inChar);
+            }else if(inChar==')'){
+                boolean val = handleClosing(st,'(');
+                if(val ==false){
+                    return false;
+                }
+            }
+            else if(inChar=='}'){
+                boolean val = handleClosing(st,'{');
+                if(val ==false){
+                    return false;
+                }
+            }
+            else if(inChar==']'){
+                boolean val = handleClosing(st,'[');
+                if(val ==false){
+                    return false;
+                }
             }
 
         }
-
-        return st.isEmpty();
+               return st.isEmpty();
     }
-
-
-    public static void main(String[] args) {
-        ValidParentheses20 vp = new ValidParentheses20();
-
-        System.out.println(vp.isValid("["));
-        System.out.println(vp.isValid("]"));
-        System.out.println(vp.isValid("[]"));
+    public static boolean handleClosing(Stack<Character> st,char corres ){
+        if(st.size()==0){
+            return false;
+        }
+        else if(st.peek()!=corres){
+            return false;
+        }else{
+            st.pop();
+            return true;
+        }
     }
+}
 
+*********************************************************************************************
+
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> brackets = new Stack<Character>();
+        int length = s.length();
+        for (int i=0;i<length;i++){
+            switch (s.charAt(i)){
+                case '(':
+                    brackets.push('(');
+                    break;
+                case '{':
+                    brackets.push('{');
+                    break;
+                case '[':
+                    brackets.push('[');
+                    break;
+                case ')':
+                    if(brackets.empty() || brackets.peek() != '(')
+                        return false;
+                    brackets.pop();
+                    break;
+                case '}':
+                    if(brackets.empty() || brackets.peek() != '{')
+                        return false;
+                    brackets.pop();
+                    break;
+                case ']':
+                    if(brackets.empty() || brackets.peek() != '[')
+                        return false;
+                    brackets.pop();
+                    break;
+            }
+            
+        }
+        return brackets.empty();
+       
+    }
 }
