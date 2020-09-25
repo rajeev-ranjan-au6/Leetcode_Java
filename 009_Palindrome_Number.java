@@ -20,22 +20,49 @@ class Solution {
         }
         return true;
     }
+}
+******************************************
+class Solution {
+public boolean isPalindrome(int x) {
+int rev=0;
+int d=1;
+int temp=x;
+if(x<0)
+return false;
+while(x!=0){
+d=x%10;
+rev=(rev*10)+d;
+x/=10;
+}
+if(rev!=temp){
+return false;
+}
+return true;
+}
+}
 
-    // Leetcode book
+*******************************************
+class Solution {
     public boolean isPalindrome(int x) {
-        if (x < 0) return false;
-        int div = 1;
-        while ( x / div >= 10) {
-            div *= 10;
+        if(x < 0){
+            return false;
         }
-        while (x !=0) {
-            int l = x / div;
-            int r = x % 10;
-            if (l != r) return false;
-            // Remove left and right number
-            x = (x % div) / 10;
-            div /= 100;
+        
+        long revnum = 0;
+        int y = x;
+        while(x != 0){
+            int digit = x % 10;
+            if(revnum > Integer.MAX_VALUE){
+                return false;
+            }
+            revnum = revnum * 10 + digit;
+            x = x / 10;
         }
-        return true;
+        
+        if((int)revnum == y){
+            return true;
+        }
+        
+        return false;
     }
 }
