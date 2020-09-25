@@ -27,71 +27,91 @@
  *
  */
 
+*****************************************************************************************
 
-
-public class StringToInteger8 {
+class Solution {
     public int myAtoi(String str) {
-        if (str == null || str.length() == 0) return 0;
-
-        long res = 0;  // Initialize result
-        int sign = 1;  // Initialize sign as positive
-        int i = 0;  // Initialize index of first digit
-        int L = str.length();
-
-
-        while (i < L && str.charAt(i) == ' ') {
-            i++;
+        str = str.trim();
+        if (str.isEmpty() 
+            || str.length() == 0 
+            || Character.isAlphabetic(str.charAt(0))) {
+            return 0;
         }
-
-        // If number is negative, then update sign
-        boolean hasSign = false;
-        while (i < L) {
-            char c = str.charAt(i);
-            if (c == '-') {
-                if (hasSign) {
-                    return 0;
-                } else {
-                    sign = -1;
-                    i++;  // Also update index of first digit
-                    hasSign = true;
-                }
-            } else if (c == '+') {
-                if (hasSign) {
-                    return 0;
-                } else {
-                    i++;  // Also update index of first digit
-                    hasSign = true;
-                }
-            } else if (c == '0') {
-                i++;  // Also update index of first digit
+        boolean minus = false;
+        if (str.charAt(0) == '-') {
+            minus = true;
+        }
+        
+        StringBuilder build = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            
+            if (Character.isDigit(ch)) {
+                build.append(ch);
+                if (build.toString().equals("0")){
+                    build = new StringBuilder();
+                } 
             } else {
-                break;
+                if (i == 0 && (ch == '-' || ch == '+')) {
+                    continue;
+                } else {
+                    break;
+                }
+            }   
+        }
+        
+        if (build.length() == 0){
+            return 0;
+        } 
+        
+        if(build.length() > 12) {
+            if (minus) {
+                return Integer.MIN_VALUE;
+            } else {
+                return Integer.MAX_VALUE;
             }
         }
-
-        // Iterate through all digits of input string and update result
-        for (; i < L; ++i) {
-            if (isNumericChar(str.charAt(i)) == false) break;
-            res = res * 10 + str.charAt(i) - '0';
-            if (res > Integer.MAX_VALUE) break;
-        }
-
-        long r = sign*res;
-
-        if (r > Integer.MAX_VALUE) {
+        
+        long number = Long.parseLong(build.toString());
+        number = minus ? number * -1: number;
+        
+        if (number > Integer.MAX_VALUE) {
             return Integer.MAX_VALUE;
-        } else if (r < Integer.MIN_VALUE) {
+        }
+        
+        if (number < Integer.MIN_VALUE) {
             return Integer.MIN_VALUE;
         }
-
-        return (int)r;
+        
+        return (int) number;
     }
-
-    // A utility function to check whether x is numeric
-    private boolean isNumericChar(char x) {
-        return (x >= '0' && x <= '9') ? true : false;
+}
+***************************************************************************************************************
+class Solution {
+    public int myAtoi(String str) {
+        if (str.isEmpty())
+            return 0;
+        
+        int i = 0;
+        while (i < str.length() && str.charAt(i) == ' ')
+            i++;
+        
+        int sign = 1;
+        if (i < str.length()) {
+            if (str.charAt(i) == '-') {
+                sign = -1;
+                i++;
+            } else if (str.charAt(i) == '+')
+                i++;
+        }
+        
+        int ans = 0;
+        while (i < str.length() && str.charAt(i) > 47 && str.charAt(i) < 58) {
+            if ((ans > Integer.MAX_VALUE / 10) ||
+                (ans == Integer.MAX_VALUE / 10 && (str.charAt(i) - '0') > 7))
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            ans = (ans * 10) + (str.charAt(i++) - '0');
+        }
+        return ans * sign;
     }
-
-
-
 }
