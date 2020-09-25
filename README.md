@@ -28,63 +28,6 @@ Java is a set of computer software and specifications developed by James Gosling
 
 # leetcode-java
 
-
-| Class Definition |
-|:----------------------------------------------------------------------------------:|
-| [ListNode](https://github.com/rajeev-ranjan-au6/leetcode-java/blob/master/ListNode.java) |
-| [TreeNode](https://github.com/rajeev-ranjan-au6/leetcode-java/blob/master/TreeNode.java) |
-| [Interval](https://github.com/rajeev-ranjan-au6/leetcode-java/blob/master/Interval.java) |
-| [TreeLinkNode](https://github.com/fluency03/leetcode-java/blob/master/src/TreeLinkNode.java) |
-| [UndirectedGraphNode](https://github.com//leetcode-java/blob/master/src/UndirectedGraphNode.java) |
-| [Point](https://github.com//leetcode-java/blob/master/src/Point.java) |
-
-
-# Search and Sort
-
-| Search ([*README*](https://github.com/flue y03/leetcode-java/tree/master/src/search)) | Sort ([*README*](https://github.com/fluency03/leetcode-java/tree/master/src/sort)) |
-|:-:|:-:|
-| [Linear Search](https://github.com/ency03/leetcode-java/blob/master/src/search/LinearSearch.java) | [Selection Sort](https://github.com/flue03/leetcode-java/blob/master/src/sort/SelectionSort.java) |
-| [Binary Search](https://github.com/fncy03/leetcode-java/blob/master/src/search/BinarySearch.java) | [Bubble Sort](https://github.com/fluey03/leetcode-java/blob/master/src/sort/BubbleSort.java) |
-| [Jump Search](https://github.com/fluy03/leetcode-java/blob/master/src/search/JumpSearch.java) | [Insertion Sort](https://github.com/fluen03/leetcode-java/blob/master/src/sort/InsertionSort.java) |
-| [Interpolation Search](https://github.com/fluey03/leetcode-java/blob/master/src/search/InterpolationSearch.java) | [Merge Sort ](https://github.com/flue/leetcode-java/blob/master/src/sort/MergeSort.java)|
-| [Exponential Search](https://github.com/fcy03/leetcode-java/blob/master/src/search/ExponentialSearch.java) | [Heap Sort](https://github.com/fluenc3/leetcode-java/blob/master/src/sort/HeapSort.java) |
-| [Ternary Search](https://github.com/flucy03/leetcode-java/blob/master/src/search/TernarySearch.java) | [Quick Sort](https://github.com/fluen03/leetcode-java/blob/master/src/sort/QuickSort.java) |
-| [...](http://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting) | [Radix Sort](https://github.com/flucy03/leetcode-java/blob/master/src/sort/RadixSort.java) |
-|  | [Counting Sort](https://github.com/fey03/leetcode-java/blob/master/src/sort/CountingSort.java) |
-|  | [Bucket Sort](https://github.com/flnc3/leetcode-java/blob/master/src/sort/BucketSort.java) |
-|  | Shell Sort |
-|  | Comb Sort |
-|  | [...](http://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting) |
-
-
-
-# [Knapsack Problem](https://github.com/fluy03/leetcode-java/tree/master/src/knapsack)
-
-| Knapsack Problem |
-|:----------------------------------------------------------------------------------:|
-| [ZeroOneKnapsack](https://github.com/flucy/leetcode-java/blob/master/src/knapsack/ZeroOneKnapsack.java) |
-| [CompleteKnapsack](https://github.com/fln3/leetcode-java/blob/master/src/knapsack/CompleteKnapsack.java) |
-
-
-
-# [Data Structures](https://github.com/flcy/leetcode-java/tree/master/src/data-structures)
-
-| Data Structures |
-|:----------------------------------------------------------------------------------:|
-| [TrieNode](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/tree/master/data-structures) |
-| [Trie](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/Trie.java) |
-| [LRUCache](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/LRUCache.java) |
-| [LFUCache](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/LFUCache.java) |
-| [BinarySearchTree](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/BinarySearchTree.java) |
-| [BinarySearchTreeWithParent](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/BinarySearchTreeWithParent.java) |
-| [BinaryIndexedTree](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/BinaryIndexedTree.java) |
-| [MinHeap](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/MinHeap.java) |
-| [DisjointSet (Union-Find)](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/data-structures/DisjointSet.java) |
-| [Graph](https://github.com/rajeev-ranjan-au6/Leetcode_java_TopicWise/blob/master/graph) |
-
-
-# Total: 538
-
 |   Easy  |  Medium | Hard |  -  |
 |:-------:|:-------:|:----:|:---:|
 |   142   |   292   |  92  | 12  |
