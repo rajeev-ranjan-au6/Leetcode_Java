@@ -67,13 +67,14 @@ Java is a set of computer software and specifications developed by James Gosling
 | [39. Combination Sum](https://leetcode.com/problems/combination-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/039_CombinationSum39.java) | Medium |
 | [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/041_FirstMissingPositive41.java) | Hard |
 | [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/042_TrappingRainWater42.java) | Hard |
-| [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/WildcardMatching44.java) | Hard |
-| [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/JumpGameII45.java) | Hard |
-| [46. Permutations](https://leetcode.com/problems/permutations/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/Permutations46.java) | Medium |
-| [47. Permutations II](https://leetcode.com/problems/permutations-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PermutationsII47.java) | Medium |
-| [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RotateImage48.java) | Medium |
-| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/GroupAnagrams49.java) | Medium |
-| [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PowXN50.java) | Medium |
+| [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/043_MultiplyStrings43.java) | Medium |
+| [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/044_WildcardMatching44.java) | Hard |
+| [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/045_JumpGameII45.java) | Hard |
+| [46. Permutations](https://leetcode.com/problems/permutations/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/046_Permutations46.java) | Medium |
+| [47. Permutations II](https://leetcode.com/problems/permutations-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/047_PermutationsII47.java) | Medium |
+| [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/048_RotateImage48.java) | Medium |
+| [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/049_GroupAnagrams49.java) | Medium |
+| [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/050_PowXN50.java) | Medium |
 | [51. N-Queens](https://leetcode.com/problems/n-queens/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NQueens51.java) | Hard |
 | [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NQueensII52.java) | Hard |
 | [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MaximumSubarray53.java) | Easy |
