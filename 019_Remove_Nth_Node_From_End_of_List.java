@@ -1,63 +1,95 @@
-/*Given a linked list, remove the n-th node from the end of list and return its head.
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode cur = head;
+        int count = 0;
+        while(cur != null) {
+            count++;
+            cur = cur.next;
+        }
+        if(count == n) {
+            return head.next;
+        }
+        cur = head;
+        for(int i = 0; i < count - n && cur != null; i++) {
+            if(i == count - n - 1) {
+                cur.next = cur.next.next;
+            }
+            cur = cur.next;
+        }
+        return head;
+    }
+}
 
-Example:
-Given linked list: 1->2->3->4->5, and n = 2.
-After removing the second node from the end, the linked list becomes 1->2->3->5.
-
-Note:
-Given n will always be valid.
-
-Follow up:
-Could you do this in one pass?*/
+*********************************************************************
 
 /**
  * Definition for singly-linked list.
  * public class ListNode {
  *     int val;
  *     ListNode next;
- *     ListNode(int x) { val = x; }
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
-    /*public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode curr = head;
-        int ls = 0;
-        while (curr != null) {
-            curr = curr.next;
-            ls++;
-        }
-        // n == len
-        if (ls == n) {
-            if (ls > 1) return head.next;
-            return null;
-        }
-        curr = head;
-        // Move to ls - n - 1
-        for (int i = 0; i < ls - n - 1; i++) {
-            curr = curr.next;
-        }
-        // Remove ls - n - 1
-        curr.next = curr.next.next;
-        return head;
-    }*/
-
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode slow, fast, curr;
-        slow = head; fast = head;
-        for (int i = 0; i < n; i++)
-            fast = fast.next;
-        // n == len
-        if (fast == null) {
-            head = head.next;
-            return head;
+        if(head == null) return head;
+        if(head.next == null && n == 1) return null;
+        
+        // when n == size of linked list
+        ListNode p = head;
+        int size = 0;
+        while(p != null) {
+            p = p.next;
+            size++;
         }
-        // Move both pointers, until reach tail
-        while (fast.next != null) {
-            fast = fast.next;
-            slow = slow.next;
+        if(size == n) {
+            return head.next;
         }
-        curr = slow.next;
-        slow.next = curr.next;
+        
+        // all other cases
+        ListNode sp = head, ep = head;
+        for(int i = 0; i < n; i++) ep = ep.next;
+        while(ep.next != null) {
+            sp = sp.next;
+            ep = ep.next;
+        }
+        sp.next = sp.next.next;
+        
         return head;
     }
 }
+
+********************************************************************************************
+
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head.next==null && n==1)
+        {
+            return null;
+        }
+        ListNode sp=head;
+        ListNode fp=head;
+        int c=0;
+        while(c<n)
+        {
+            fp=fp.next;
+            c++;
+        }
+       if(fp==null)
+       {
+           head=head.next;
+           return head;
+       }
+        while(fp.next!=null)
+        {
+            sp=sp.next;
+            fp=fp.next;
+        }
+        sp.next=sp.next.next;
+        return head;
+    }
+}
+
+*****************************************************************************
