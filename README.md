@@ -35,39 +35,39 @@ Java is a set of computer software and specifications developed by James Gosling
 | [TreeNode](https://github.com/rajeev-ranjan-au6/leetcode-java/blob/master/TreeNode.java) |
 | [Interval](https://github.com/rajeev-ranjan-au6/leetcode-java/blob/master/Interval.java) |
 | [TreeLinkNode](https://github.com/fluency03/leetcode-java/blob/master/src/TreeLinkNode.java) |
-| [UndirectedGraphNode](https://github.com/fluency03/leetcode-java/blob/master/src/UndirectedGraphNode.java) |
-| [Point](https://github.com/fluency03/leetcode-java/blob/master/src/Point.java) |
+| [UndirectedGraphNode](https://github.com//leetcode-java/blob/master/src/UndirectedGraphNode.java) |
+| [Point](https://github.com//leetcode-java/blob/master/src/Point.java) |
 
 
 # Search and Sort
 
-| Search ([*README*](https://github.com/fluency03/leetcode-java/tree/master/src/search)) | Sort ([*README*](https://github.com/fluency03/leetcode-java/tree/master/src/sort)) |
+| Search ([*README*](https://github.com/flue y03/leetcode-java/tree/master/src/search)) | Sort ([*README*](https://github.com/fluency03/leetcode-java/tree/master/src/sort)) |
 |:-:|:-:|
-| [Linear Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/LinearSearch.java) | [Selection Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/SelectionSort.java) |
-| [Binary Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/BinarySearch.java) | [Bubble Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/BubbleSort.java) |
-| [Jump Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/JumpSearch.java) | [Insertion Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/InsertionSort.java) |
-| [Interpolation Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/InterpolationSearch.java) | [Merge Sort ](https://github.com/fluency03/leetcode-java/blob/master/src/sort/MergeSort.java)|
-| [Exponential Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/ExponentialSearch.java) | [Heap Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/HeapSort.java) |
-| [Ternary Search](https://github.com/fluency03/leetcode-java/blob/master/src/search/TernarySearch.java) | [Quick Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/QuickSort.java) |
-| [...](http://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting) | [Radix Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/RadixSort.java) |
-|  | [Counting Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/CountingSort.java) |
-|  | [Bucket Sort](https://github.com/fluency03/leetcode-java/blob/master/src/sort/BucketSort.java) |
+| [Linear Search](https://github.com/ency03/leetcode-java/blob/master/src/search/LinearSearch.java) | [Selection Sort](https://github.com/flue03/leetcode-java/blob/master/src/sort/SelectionSort.java) |
+| [Binary Search](https://github.com/fncy03/leetcode-java/blob/master/src/search/BinarySearch.java) | [Bubble Sort](https://github.com/fluey03/leetcode-java/blob/master/src/sort/BubbleSort.java) |
+| [Jump Search](https://github.com/fluy03/leetcode-java/blob/master/src/search/JumpSearch.java) | [Insertion Sort](https://github.com/fluen03/leetcode-java/blob/master/src/sort/InsertionSort.java) |
+| [Interpolation Search](https://github.com/fluey03/leetcode-java/blob/master/src/search/InterpolationSearch.java) | [Merge Sort ](https://github.com/flue/leetcode-java/blob/master/src/sort/MergeSort.java)|
+| [Exponential Search](https://github.com/fcy03/leetcode-java/blob/master/src/search/ExponentialSearch.java) | [Heap Sort](https://github.com/fluenc3/leetcode-java/blob/master/src/sort/HeapSort.java) |
+| [Ternary Search](https://github.com/flucy03/leetcode-java/blob/master/src/search/TernarySearch.java) | [Quick Sort](https://github.com/fluen03/leetcode-java/blob/master/src/sort/QuickSort.java) |
+| [...](http://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting) | [Radix Sort](https://github.com/flucy03/leetcode-java/blob/master/src/sort/RadixSort.java) |
+|  | [Counting Sort](https://github.com/fey03/leetcode-java/blob/master/src/sort/CountingSort.java) |
+|  | [Bucket Sort](https://github.com/flnc3/leetcode-java/blob/master/src/sort/BucketSort.java) |
 |  | Shell Sort |
 |  | Comb Sort |
 |  | [...](http://www.geeksforgeeks.org/fundamentals-of-algorithms/#SearchingandSorting) |
 
 
 
-# [Knapsack Problem](https://github.com/fluency03/leetcode-java/tree/master/src/knapsack)
+# [Knapsack Problem](https://github.com/fluy03/leetcode-java/tree/master/src/knapsack)
 
 | Knapsack Problem |
 |:----------------------------------------------------------------------------------:|
-| [ZeroOneKnapsack](https://github.com/fluency03/leetcode-java/blob/master/src/knapsack/ZeroOneKnapsack.java) |
-| [CompleteKnapsack](https://github.com/fluency03/leetcode-java/blob/master/src/knapsack/CompleteKnapsack.java) |
+| [ZeroOneKnapsack](https://github.com/flucy/leetcode-java/blob/master/src/knapsack/ZeroOneKnapsack.java) |
+| [CompleteKnapsack](https://github.com/fln3/leetcode-java/blob/master/src/knapsack/CompleteKnapsack.java) |
 
 
 
-# [Data Structures](https://github.com/fluency03/leetcode-java/tree/master/src/data-structures)
+# [Data Structures](https://github.com/flcy/leetcode-java/tree/master/src/data-structures)
 
 | Data Structures |
 |:----------------------------------------------------------------------------------:|
@@ -92,32 +92,34 @@ Java is a set of computer software and specifications developed by James Gosling
 
 | Question | Solution | Difficulty |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------:|:----------:|
-| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/TwoSum1.java) | Easy |
-| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/AddTwoNumbers2.java) | Medium |
-| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestSubstringWithoutRepeatingCharacters3.java) | Medium |
-| [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MedianOfTwoSortedArrays4.java) | Hard |
-| [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestPalindromicSubstring5.java) | Medium |
-| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PalindromeNumber9.java) | Easy |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/001_Two_Sum.java) | Easy |
+| [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/002_Add_Two_Numbers.java) | Medium |
+| [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/003_LongestSubstringWithoutRepeatingCharacters3.java) | Medium |
+| [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/004_Median_of_Two_Sorted_Arrays.java) | Hard |
+| [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/005_Longest_Palindromic_Substring.java) | Medium |
+| [7. Reverse_Integer](https://leetcode.com/problems/longest-palindromic-substring/(.....) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/007_Reverse_Integer.java) | Medium |
+| [8. StringToInteger](https://leetcode.com/problems/longest-palindromic-substring/(.....) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/008_StringToInteger8.java) | Medium |
+| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/009_Palindrome_Number.java) | Easy |
 | [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/StringToInteger8.java) | Medium |
-| [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RegularExpressionMatching10.java) | Hard |
-| [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ContainerWithMostWater11.java) | Medium |
-| [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/IntegerToRoman12.java) | Medium |
-| [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RomanToInteger13.java) | Easy |
-| [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestCommonPrefix14.java) | Easy |
-| [15. 3Sum](https://leetcode.com/problems/3sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ThreeSum15.java) | Medium |
-| [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ThreeSumClosest16.java) | Medium |
-| [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LetterCombinationsOfAPhoneNumber17.java) | Medium |
-| [18. 4Sum](https://leetcode.com/problems/4sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/FourSum18.java) | Medium |
-| [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LetterCombinationsOfAPhoneNumber17.java) | Medium |
-| [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ValidParentheses20.java) | Easy |
-| [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MergeTwoSortedLists21.java) | Easy |
-| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/GenerateParentheses22.java) | Medium |
-| [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MergeKSortedLists23.java) | Hard |
-| [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ReverseNodesInKGroup25.java) | Hard |
-| [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RemoveDuplicatesFromSortedArray26.java) | Easy |
-| [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ImplementStrStr28.java) | Easy |
-| [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/DivideTwoIntegers29.java) | Easy |
-| [31. Next Permutation](https://leetcode.com/problems/next-permutation/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NextPermutation31.java) | Medium |
+| [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/010_RegularExpressionMatching10.java) | Hard |
+| [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/011_ContainerWithMostWater11.java) | Medium |
+| [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/012_IntegerToRoman12.java) | Medium |
+| [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/013_RomanToInteger13.java) | Easy |
+| [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/014_LongestCommonPrefix14.java) | Easy |
+| [15. 3Sum](https://leetcode.com/problems/3sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/015_ThreeSum15.java) | Medium |
+| [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/016_ThreeSumClosest16.java) | Medium |
+| [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/017_LetterCombinationsOfAPhoneNumber17.java) | Medium |
+| [18. 4Sum](https://leetcode.com/problems/4sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/018_FourSum18.java) | Medium |
+| [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/019_Remove_Nth_Node_From_End_of_List.java) | Medium |
+| [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/020_ValidParentheses20.java) | Easy |
+| [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/021_MergeTwoSortedLists21.java) | Easy |
+| [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/022_GenerateParentheses22.java) | Medium |
+| [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/023_MergeKSortedLists23.java) | Hard |
+| [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/025_ReverseNodesInKGroup25.java) | Hard |
+| [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/026_RemoveDuplicatesFromSortedArray26.java) | Easy |
+| [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/028_ImplementStrStr28.java) | Easy |
+| [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/029_DivideTwoIntegers29.java) | Easy |
+| [31. Next Permutation](https://leetcode.com/problems/next-permutation/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/031_NextPermutation31.java) | Medium |
 | [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestValidParentheses32.java) | Hard |
 | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchInRotatedSortedArray33.java) | Medium |
 | [34. Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchForARange34.java) | Medium |
