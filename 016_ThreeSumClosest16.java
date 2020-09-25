@@ -1,84 +1,113 @@
-/**
- * Given an array S of n integers, find three integers in S such that the sum
- * is closest to a given number, target. Return the sum of the three integers.
- * You may assume that each input would have exactly one solution.
- *
- * For example, given array S = {-1 2 1 -4}, and target = 1.
- *
- * The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
- */
-
-
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.HashSet;
-import java.util.Set;
-
-
-public class ThreeSumClosest16 {
-
+class Solution {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
-
-        Integer sumClosest = Integer.MAX_VALUE;
-        Integer diffClosest = Integer.MAX_VALUE;
-
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (i == 0 || (i > 0 && nums[i] != nums[i-1])) {
-                int low = i + 1;
-                int high = nums.length - 1;
-                while (low < high) {
-                    int tempSum  = nums[i] + nums[low] + nums[high];
-                    if (tempSum == target) {
-                        return tempSum;
-                    }
-
-                    boolean update = diffClosest > Math.abs(tempSum - target);
-                    sumClosest = update ? tempSum : sumClosest;
-                    diffClosest = update ? Math.abs(tempSum - target) : diffClosest;
-
-                    if (tempSum < target) {
-                        low++;
-                    } else {
-                        high--;
-                    }
+        int diff = Integer.MAX_VALUE;
+        
+        for (int i = 0; i < nums.length; i++) {
+            int left = i + 1;
+            int right = nums.length - 1;
+            
+            while (left < right) {
+                int sum  = nums[i] + nums[left] + nums[right];
+                
+                if (Math.abs(target - sum) < Math.abs(diff)) {
+                    diff = target - sum;
+                }
+                
+                if (sum > target) {
+                    right--;
+                }
+                else {
+                    left++;
                 }
             }
         }
-        return sumClosest;
+        return (target-diff);
     }
+}
 
-    /**
-     * https://discuss.leetcode.com/topic/5192/java-solution-with-o-n2-for-reference/19
-     */
-    public int threeSumClosest2(int[] num, int target) {
-        int result = num[0] + num[1] + num[num.length - 1];
-        Arrays.sort(num);
-        for (int i = 0; i < num.length - 2; i++) {
-            if (i > 0 && num[i] == num[i-1]) continue;
-            int start = i + 1, end = num.length - 1;
-            while (start < end) {
-                int sum = num[i] + num[start] + num[end];
-                if (sum > target) {
+****************************************************************************************
+
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int ans=Integer.MAX_VALUE;
+        for(int i=0;i<nums.length-1;i++)
+        {
+            int j=i+1;
+            int k=nums.length-1;
+            while(j<k)
+            {
+                if(Math.abs(target-(nums[i]+nums[j]+nums[k]))<Math.abs(ans))
+                    ans=target-(nums[i]+nums[j]+nums[k]);
+                if((nums[i]+nums[j]+nums[k])<target) j++;
+                else k--;
+                
+            }
+        }
+        return target-ans;               
+    }
+}
+
+***************************************************************************************
+
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        // sort array asc
+        Arrays.sort(nums);
+        
+        // closed value to the target
+        int closest = Integer.MAX_VALUE;
+        // here we will store the result value
+        int result = 0;
+        
+        // iterate from start to the end.
+        // 'curr' is one of the pointers
+        for(int curr = 0; curr < nums.length - 1; curr ++) {
+            
+            // find the other values in an area between current pointer and the end
+            int start = curr + 1;
+            int end = nums.length - 1;
+            
+            // iterate before two pointers meet each other
+            while(start != end) {
+                
+                // our three pointers
+                int v1 = nums[start];
+                int v2 = nums[curr];
+                int v3 = nums[end];
+
+                // just a summ of all of pointers
+                int sum = v1 + v2 + v3;
+
+                // if we found exact value (suit for regular 3Sum)
+                if(sum == target) {
+                    return sum;
+                }
+                // if the summ is higher than target move 'end' pointer to make the next summ lower (as far as we used sorted array)
+                if(sum > target) {
                     end--;
-                } else {
+                }
+                // if sum is too low than move start pointer to increase the value of the next sum
+                if(sum < target) {
                     start++;
                 }
-                if (Math.abs(sum - target) < Math.abs(result - target)) {
+
+                // difference between 'target' and current 'sum'
+                int sumDif = 0;
+                // keep in mind that target can be below zero
+                // keep diff value as a positive as far as we're looking for the closest value from both size from the 'target'
+                if(target > 0) sumDif = Math.abs(target - sum);
+                else sumDif = Math.abs(sum - target);
+
+                // store result
+                if(sumDif < closest) {
+                    closest = sumDif;
                     result = sum;
                 }
             }
         }
         return result;
     }
-
-
-    public static void main(String[] args) {
-        ThreeSumClosest16 tsc = new ThreeSumClosest16();
-
-        System.out.println(tsc.threeSumClosest(new int[]{-1, 2, 1, -4}, 1));
-        System.out.println(tsc.threeSumClosest(new int[]{-1, 0, 1, 1, 55}, 3));
-    }
-
 }
+
