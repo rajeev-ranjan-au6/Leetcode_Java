@@ -1,92 +1,193 @@
-/**
- * You are given an n x n 2D matrix representing an image.
- *
- * Rotate the image by 90 degrees (clockwise).
- *
- * Note:
- * You have to rotate the image in-place, which means you have to modify the
- * input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
- *
- * Example 1:
- *
- * Given input matrix =
- * [
- *   [1,2,3],
- *   [4,5,6],
- *   [7,8,9]
- * ],
- *
- * rotate the input matrix in-place such that it becomes:
- * [
- *   [7,4,1],
- *   [8,5,2],
- *   [9,6,3]
- * ]
- *
- *
- * Example 2:
- *
- * Given input matrix =
- * [
- *   [ 5, 1, 9,11],
- *   [ 2, 4, 8,10],
- *   [13, 3, 6, 7],
- *   [15,14,12,16]
- * ],
- *
- * rotate the input matrix in-place such that it becomes:
- * [
- *   [15,13, 2, 5],
- *   [14, 3, 4, 1],
- *   [12, 6, 8, 9],
- *   [16, 7,10,11]
- * ]
- *
- */
+class Solution {
+public void rotate(int[][] matrix) {
+for(int i=0;i<matrix.length;i++)
+{
+for(int j=i+1;j<matrix.length;j++)
+{
+int temp=matrix[i][j];
+matrix[i][j]=matrix[j][i];
+matrix[j][i]=temp;
+}
+}
+for(int i=0;i<matrix.length;i++)
+{
+int low=0,high=matrix.length-1;
+while(low<high)
+{
+int temp=matrix[i][low];
+matrix[i][low]=matrix[i][high];
+matrix[i][high]=temp;
+low++;
+high--;
 
-
-public class RotateImage48 {
-    public void rotate(int[][] matrix) {
-        if (matrix == null || matrix.length == 0 || matrix.length == 1) return;
-        int len = matrix.length;
-        int mid = (len-1)/2;
-        for (int i=0; i<=mid; i++) {
-            if (i > len-i-2) continue;
-            int last = Math.max(len-i-2, i);
-            for (int j=i; j<=last; j++) {
-                int forth = matrix[j][len-i-1];
-                int first = matrix[i][j];
-                matrix[j][len-i-1] = first;
-                int second = matrix[len-j-1][i];
-                matrix[i][j] = second;
-                int third = matrix[len-i-1][len-j-1];
-                matrix[len-j-1][i] = third;
-                matrix[len-i-1][len-j-1] = forth;
-            }
         }
     }
+}
+}
 
+************************************************************
 
-    /**
-     * https://leetcode.com/problems/rotate-image/discuss/18879/AC-Java-in-place-solution-with-explanation-Easy-to-understand.
-     */
-    public void rotate2(int[][] matrix) {
-        for(int i = 0; i<matrix.length; i++){
-            for(int j = i; j<matrix[0].length; j++){
-                int temp = 0;
+class Solution {
+    public void rotate(int[][] matrix) {
+        int temp;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < i; j++) {
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = temp;
             }
         }
-        for(int i =0 ; i<matrix.length; i++){
-            for(int j = 0; j<matrix.length/2; j++){
-                int temp = 0;
-                temp = matrix[i][j];
-                matrix[i][j] = matrix[i][matrix.length-1-j];
-                matrix[i][matrix.length-1-j] = temp;
+
+        int h_ptr = 0, t_ptr = matrix.length - 1;
+        for (int i = 0; i < matrix.length; i++) {
+            while (h_ptr < t_ptr) {
+                temp = matrix[i][h_ptr];
+                matrix[i][h_ptr] = matrix[i][t_ptr];
+                matrix[i][t_ptr] = temp;
+                h_ptr++;
+                t_ptr--;
             }
+            h_ptr = 0;
+            t_ptr = matrix.length - 1;
         }
     }
+}
 
+****************************************************************
+
+/*
+    Video explanation: https://youtu.be/6SohPBdwU94
+*/
+class Solution {
+
+	/*
+	[1,2,3],
+	[4,5,6],
+	[7,8,9]
+
+	mirror around secondary diagonal   
+
+	[9, 6, 3],
+	[8, 5, 2],
+	[7, 4, 1]
+
+	mirror horizontally around middle line
+
+	[7, 4, 1],
+	[8, 5, 2],
+	[9, 6, 3]
+	*/
+
+	/*
+	[ 5, 1, 9,11],
+	[ 2, 4, 8,10],
+	[13, 3, 6, 7],
+	[15,14,12,16]
+
+	mirror around secondary diagonal 
+
+	[16, 7, 10, 11],
+	[12, 6,  8,  9],
+	[14, 3,  4,  1],
+	[15, 13, 2,  5]
+
+	mirror horizontally around middle line
+
+	...
+	
+	*/
+
+	public void rotate(int[][] matrix) {
+		mirrorSecondaryDiagonal(matrix);
+		mirrorHorizontally(matrix);
+	}
+
+	private static void mirrorSecondaryDiagonal(int[][] matrix) {
+        // flip second diagonaly
+		for(int i = 0; i < matrix.length; i++) {
+			for(int j = 0; j < matrix.length - i - 1; j++) {
+				int current = matrix[i][j];
+				matrix[i][j] = matrix[matrix.length - j - 1][matrix.length - i - 1];
+				matrix[matrix.length - j - 1][matrix.length - i - 1] = current;
+			}
+		}
+	}
+    // flip horizontally
+	private static void mirrorHorizontally(int[][] matrix) {
+		for(int i = 0; i < matrix.length / 2; i++) {
+			for(int j = 0; j < matrix.length; j++) {
+				int current = matrix[i][j];
+				matrix[i][j] = matrix[matrix.length - i - 1][j];
+				matrix[matrix.length - i - 1][j] = current;
+			}
+		}
+
+	}
+}
+
+************************************************************************
+
+class Solution {
+    public void rotate(int[][] matrix) {
+        int rowUpper = 0;
+        int rowLower = matrix.length - 1;
+        int colLeft = 0;
+        int colRight = matrix.length - 1;
+        while(rowUpper<rowLower && colLeft<colRight) {
+        	rotate(matrix, rowUpper, rowLower, colLeft, colRight);
+        	rowUpper++;
+        	rowLower--;
+        	colLeft++;
+        	colRight--;
+        }
+    }
+	
+	public static void rotate(int[][] matrix, int rowUpper, int rowLower, int colLeft, int colRight) {
+		int k=0;
+		for(int i=colLeft; i<colRight; i++) {
+			int tmp1 = matrix[rowUpper+k][colRight];
+			matrix[rowUpper+k][colRight] = matrix[rowUpper][i];
+			int tmp2 = matrix[rowLower][colRight-k];
+			matrix[rowLower][colRight-k] = tmp1;
+			tmp1 = matrix[rowLower-k][colLeft];
+			matrix[rowLower-k][colLeft] = tmp2;
+			matrix[rowUpper][i] = tmp1;
+			k++;
+		}
+	}
+}
+
+*****************************************************
+
+class Solution {
+    
+    public int[] reverse(int[] array) {
+        
+        int n = array.length;
+        int[] b = new int[n]; 
+        int j = n; 
+        for (int i = 0; i < n; i++) { 
+            b[j - 1] = array[i]; 
+            j = j - 1; 
+        }
+        
+        return b;
+    }
+    
+    public void rotate(int[][] matrix) {
+        
+        int N = matrix.length;
+        int M = matrix[0].length;
+        for (int i = 0; i < N; i++) {
+            for (int j = i+1; j < M; j++) { 
+                 int temp = matrix[i][j]; 
+                 matrix[i][j] = matrix[j][i]; 
+                 matrix[j][i] = temp; 
+            }
+        }    
+        
+        for(int i=0; i<N; i++) {
+            matrix[i] = reverse(matrix[i]);
+        }
+    }
 }
