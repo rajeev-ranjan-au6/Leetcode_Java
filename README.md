@@ -36,8 +36,8 @@ Java is a set of computer software and specifications developed by James Gosling
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/004_Median_of_Two_Sorted_Arrays.java) | Hard |
 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/005_Longest_Palindromic_Substring.java) | Medium |
 | [6. ZigZag Conversion](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/006_ZigZag%20Conversion.java) | Medium |
-| [7. Reverse_Integer](https://leetcode.com/problems/longest-palindromic-substring/(.....) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/007_Reverse_Integer.java) | Medium |
-| [8. StringToInteger](https://leetcode.com/problems/longest-palindromic-substring/(.....) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/008_StringToInteger8.java) | Medium |
+| [7. Reverse_Integer](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/007_Reverse_Integer.java) | Medium |
+| [8. StringToInteger](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/008_StringToInteger8.java) | Medium |
 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/009_Palindrome_Number.java) | Easy |
 | [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/010_RegularExpressionMatching10.java) | Hard |
 | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/011_ContainerWithMostWater11.java) | Medium |
