@@ -1,60 +1,114 @@
-/**
- * Given a sorted array and a target value, return the index if the target is
- * found. If not, return the index where it would be if it were inserted in
- * order.
- *
- * You may assume no duplicates in the array.
- *
- * Here are few examples.
- * [1,3,5,6], 5 → 2
- * [1,3,5,6], 2 → 1
- * [1,3,5,6], 7 → 4
- * [1,3,5,6], 0 → 0
- */
+class Solution {
+public int searchInsert(int[] nums, int target) {
+int i = 0 ;
+
+          if(target==1 ||nums[i]==target){
+        return i;
+    }
+    
+    
+    if(target==0){
+      return 0;
+    }
+    
+
+        if((nums.length-1)==0){
+       return i+1 ; 
+        }
+        
+    while(target>=nums[i]){
+      
+        if(target==nums[i]){
+            return i ;
+        }
+                    if(i==nums.length-1){
+            return i+1 ;
+        } 
+        i++;
+
+    }
+    return i;
+
+}
+}
 
 
-public class SearchInsertPosition35 {
+****************************************************************
+class Solution {
     public int searchInsert(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= target) {
-                return i;
+        int i = 0, index = 0;
+        int n = nums.length;
+        for(i = 0; i < n; i++)
+        {
+            if(nums[i] == target)
+            {
+                index = i;
+            }
+            
+            else
+            {
+                if(nums[i] < target)
+                {
+                    index = i+1;
+                }
             }
         }
+        return index;
+    }
+}
+********************************************************************
+class Solution {
+public int searchInsert(int[] nums, int target) {
+int i,a=-1;
+for(i=0;i<nums.length;i++){
+if(nums[i]==target)
+a=i;
+
+    }
+    if(a==-1){
+        for(i=0;i<nums.length;i++){
+     if(nums[i]>target || i==nums.length-1){
+          if(i==(nums.length-1) && target>nums[i]){
+                a=i+1;
+              break;
+          }
+         else
+             a=i;
+                a=i;
+                break;
+            }
+        }
+    }
+
+    return a;
+}
+}
+
+******************************************************************************
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++)
+            if(nums[i]>=target)
+                return i;
         return nums.length;
     }
-
-
-    /**
-     * https://discuss.leetcode.com/topic/7874/my-8-line-java-solution
-     */
-    public int searchInsert2(int[] A, int target) {
-        int low = 0, high = A.length-1;
-        while(low <= high){
-            int mid = (low + high) / 2;
-            if(A[mid] == target) return mid;
-            else if(A[mid] > target) high = mid-1;
-            else low = mid+1;
-        }
-        return low;
-    }
-
-
-    public int searchInsert3(int[] nums, int target) {
-        if (nums.length == 0) return 0;
-        if (target > nums[nums.length-1]) return nums.length;
-        int l = 0;
-        int r = nums.length-1;
-        
-        while (l < r) {
-            int mid = (r - l) / 2 + l;
-            if (nums[mid] == target) return mid;
-            else if (nums[mid] < target) {
-                l = mid + 1;
-            } else {
-                r = mid;
-            }
-        }
-        return l;
-    }
-
+}
+**********************************************************************
+class Solution {
+public int searchInsert(int[] nums, int target) {
+int i=0;
+for(i=0;i<nums.length;i++)
+{
+if(nums[i]==target)
+{
+return i;
+}
+if(nums[i]>target)
+{
+return i;
+}
+}
+return i;
+}
 }
