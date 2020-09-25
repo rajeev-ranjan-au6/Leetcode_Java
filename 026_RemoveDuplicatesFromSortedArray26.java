@@ -1,59 +1,85 @@
-/**
- * Given a sorted array, remove the duplicates in place such that each element
- * appear only once and return the new length.
- *
- * Do not allocate extra space for another array, you must do this in place with
- * constant memory.
- *
- * For example,
- * Given input array nums = [1,1,2],
- *
- * Your function should return length = 2, with the first two elements of nums
- * being 1 and 2 respectively. It doesn't matter what you leave beyond the new
- * length.
- *
- */
-
-public class RemoveDuplicatesFromSortedArray26 {
+class Solution {
     public int removeDuplicates(int[] nums) {
-        if (nums.length <= 1) {
-            return nums.length;
-        }
-        int slow = 0;
-        int fast = 1;
-        while (fast < nums.length) {
-            if (nums[fast] != nums[slow]) {
-                slow++;
-                nums[slow] = nums[fast];
+        if(nums.length == 0) return 0;
+        int n = nums.length, i = 0, j = 1, last = nums[0];
+        while(j < n) {
+            if(nums[j] != last) {
+                i++;
+                last = nums[j];
+                nums[i] = nums[j];
             }
-            fast++;
+            j++;
         }
-        return slow+1;
+        return i+1;
     }
+}
 
-    /**
-     * https://discuss.leetcode.com/topic/17252/5-lines-c-java-nicer-loops
-     */
-    public int removeDuplicates2(int[] nums) {
-        int i = nums.length > 0 ? 1 : 0;
-        for (int n : nums)
-            if (n > nums[i-1])
-                nums[i++] = n;
-        return i;
-    }
+*******************************************************************
+class Solution {
+public int removeDuplicates(int[] nums) {
+int startindex=1;
+int n=nums.length;
+for(int i=0;i<n-1;i++)
+{
+if(nums[i+1]==nums[i])
+{
+int a=nums[i];
+while(i<n && nums[i]==a)
+i++;
+if(i<n){
+nums[startindex]=nums[i];
+startindex++;
+i--;
+}
+else
+break;
+}
+else
+{
+nums[startindex]=nums[i+1];
+startindex++;
+}
+}
 
+    return startindex;
+}
+}
 
-    public int removeDuplicates3(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        int len = nums.length;
-        int i = 0;
-        int j = 0;
-        while (j < len) {
-            while (j > 0 && j < len && nums[j] == nums[j-1]) j++;
-            if (j == len) break;
-            nums[i++] = nums[j++];
+******************************************************************
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int pointer=0;
+        int current=1;
+        for(int index=0;index<nums.length-1;index++)
+        {
+            if(nums[current]==nums[pointer])
+            {
+                current++;
+            }
+            else
+            {
+                pointer++;
+               nums[pointer]=nums[current];
+                current++;
+            }
         }
-        return i;
+        return pointer+1;
     }
+}
 
+*******************************************************************
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        if(nums.length<=1) return nums.length;
+        int curRepPos=1;
+        int i=0;
+        while(i<nums.length-1){
+            int j=i+1;
+            while(j<nums.length && nums[i]==nums[j]) j++;
+            if(j==nums.length) break;
+            nums[curRepPos++] = nums[j];
+            i=j;
+        }
+        return curRepPos;
+    }
 }
