@@ -58,15 +58,15 @@ Java is a set of computer software and specifications developed by James Gosling
 | [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/028_ImplementStrStr28.java) | Easy |
 | [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/029_DivideTwoIntegers29.java) | Easy |
 | [31. Next Permutation](https://leetcode.com/problems/next-permutation/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/031_NextPermutation31.java) | Medium |
-| [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestValidParentheses32.java) | Hard |
-| [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchInRotatedSortedArray33.java) | Medium |
-| [34. Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchForARange34.java) | Medium |
-| [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchInsertPosition35.java) | Easy |
-| [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ValidSudoku36.java) | Medium |
-| [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SudokuSolver37.java) | Hard |
-| [39. Combination Sum](https://leetcode.com/problems/combination-sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/CombinationSum39.java) | Medium |
-| [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/FirstMissingPositive41.java) | Hard |
-| [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/TrappingRainWater42.java) | Hard |
+| [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/032_LongestValidParentheses32.java) | Hard |
+| [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/033_SearchInRotatedSortedArray33.java) | Medium |
+| [34. Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/034_SearchForARange34.java) | Medium |
+| [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/035_SearchInsertPosition35.java) | Easy |
+| [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/036_ValidSudoku36.java) | Medium |
+| [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/037_SudokuSolver37.java) | Hard |
+| [39. Combination Sum](https://leetcode.com/problems/combination-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/039_CombinationSum39.java) | Medium |
+| [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/041_FirstMissingPositive41.java) | Hard |
+| [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/042_TrappingRainWater42.java) | Hard |
 | [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/WildcardMatching44.java) | Hard |
 | [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/JumpGameII45.java) | Hard |
 | [46. Permutations](https://leetcode.com/problems/permutations/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/Permutations46.java) | Medium |
