@@ -1,30 +1,51 @@
-public class Solution {
-    // example in leetcode book
+class Solution {
     public String longestPalindrome(String s) {
-        int start = 0, end = 0;
-        for (int i = 0; i < s.length(); i++) {
-            // aba
-            int len1 = expandAroundCenter(s, i, i);
-            // bb
-            int len2 = expandAroundCenter(s, i, i + 1);
-            int len = Math.max(len1, len2);
-            if (len > end - start) {
-                start = i - (len - 1) / 2;
-                end = i + len / 2;
+        /*
+        * Calculate all palindromic strings that ended at index i
+        * Assume that we have a list of integers corresponding to the length of palindromic strings which ended with i - 1 th
+        * If the length of 1 palindromic string is L and s[i] == s[i - L - 1] => we have new string that ended with ith, and its length is L + 2
+        * Consider the s[i - 1] and s[i - 2] to make 2-char and 3-char strings. 
+        */
+        if (s.length() == 0) return "";
+        int maxLength = 1;
+        int endIdx = 0;
+        List<Integer> preResult = new ArrayList<>();
+        
+        int sizeList = 0;
+        for (int i = 1; i < s.length(); i++){
+            int k = 0;
+            // Consider all strings that ended with (i-1)th
+            for (int j = 0; j < sizeList; j ++ ){
+                if ( preResult.size()>0 && i - preResult.get(j) -1 >= 0 && s.charAt(i) == s.charAt(i-preResult.get(j)-1)){ 
+                    set(preResult, k ,preResult.get(j) + 2);
+                    k++;
+                }
+            }
+            if (i > 1 && s.charAt(i) == s.charAt(i-2)){ // make 3-char string
+                set(preResult, k, 3);
+                k++;
+            }
+            if (s.charAt(i) == s.charAt(i-1)){ // make 2-char string
+                set(preResult, k, 2);
+                k++;
+            }
+            sizeList = k;
+            if (sizeList > 0 && maxLength < preResult.get(0)){
+                    maxLength = preResult.get(0);
+                    endIdx = i;
             }
         }
-        return s.substring(start, end + 1);
+        return s.substring(endIdx - maxLength + 1,endIdx + 1);
     }
-
-    private int expandAroundCenter(String s, int left, int right) {
-        int L = left, R = right;
-        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
-            L--;
-            R++;
+    
+    private void set(List<Integer> a, int index, int value){
+        if (index >= a.size()){
+            a.add(value);
+        } else {
+            a.set(index, value);
         }
-        return R - L - 1;
     }
-
+}
 
 
     // ManachersAlgorithm
