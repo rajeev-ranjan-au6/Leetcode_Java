@@ -1,133 +1,101 @@
-/**
- * Given a collection of numbers that might contain duplicates, return all
- * possible unique permutations.
- *
- * For example,
- * [1,1,2] have the following unique permutations:
- * [
- *   [1,1,2],
- *   [1,2,1],
- *   [2,1,1]
- * ]
- *
- */
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+       List<List<Integer>> list = new ArrayList<>();
+       permute(nums,0,list); 
+       return list;
+    }
+    
+    private void permute(int[] nums, int i, List<List<Integer>> list) {
+        if(i==nums.length){
+            List<Integer> l1 = new ArrayList<>();
+            for(int n:nums) {
+                l1.add(n);
+            }
+            list.add(l1);
+            return;
+        }
+        Set<Integer> set = new HashSet<>();
+        for(int s=i;s<nums.length;s++) {
+            if(set.add(nums[s])) {
+                swap(nums,s,i);
+                permute(nums,i+1,list);
+                swap(nums,s,i);
+            }
+        }
+    }
+    
+    private void swap(int[] nums,int i,int j) {
+        int t = nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+    }
+}
 
-public class PermutationsII47 {
+*********************************************************************************
+class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
         Arrays.sort(nums);
-        Set<List<Integer>> result = new HashSet<>();
-        perm(result, nums, 0);
-        List<List<Integer>> res = new ArrayList<>();
-        for (List<Integer> l: result) res.add(l);
-        return res;
+        List<List<Integer>> permutations=new ArrayList();
+        backtrack(new boolean[nums.length], new ArrayList(),permutations,nums);
+        return permutations;
     }
-
-    private static void perm(Set<List<Integer>> result, int[] nums, int start){
-        if (start == nums.length-1) {
-            Integer[] ele = new Integer[nums.length];
-            for(int i = 0; i < nums.length; i++){
-                ele[i] = nums[i];
-            }
-            result.add(Arrays.asList(ele));
-            return;
+    public void backtrack(boolean[] used, List<Integer> current,List<List<Integer>> permutations,int[] nums){
+        if(current.size()==nums.length){
+            permutations.add(new ArrayList(current));
         }
-        int pre = nums[start];
-        for (int i = start; i < nums.length; i++) {
-            if (start != i && (nums[start] == nums[i] || pre == nums[i])) continue;
-            pre = nums[i];
-            swap(nums, start, i);
-            perm(result, nums, start + 1);
-            swap(nums, start, i);
-        }
-    }
-
-    private static void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
-
-
-    /**
-     * https://leetcode.com/problems/permutations-ii/discuss/18648/Share-my-Java-code-with-detailed-explanantion
-     */
-    public List<List<Integer>> permuteUnique2(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
-      	perm(result, nums, 0);
-      	return result;
-    }
-
-    private static void perm(List<List<Integer>> result, int[] nums, int start){
-      	if (start == nums.length-1) {
-            Integer[] ele = new Integer[nums.length];
-            for(int i = 0; i < nums.length; i++){
-                ele[i] = nums[i];
-            }
-            result.add(Arrays.asList(ele));
-            return;
-        }
-        Set<Integer> seen = new HashSet<>();
-        for (int i = start; i < nums.length; i++) {
-            if (seen.add(nums[i])) {
-                swap(nums, start, i);
-                perm(result, nums, start + 1);
-                swap(nums, start, i);
+        else{
+            for(int i=0;i<nums.length;i++){
+                if(used[i] || i>0 && nums[i]==nums[i-1] && !used[i-1]) continue;
+                used[i]=true;
+                current.add(nums[i]);
+                backtrack(used,current,permutations,nums);
+                used[i]=false;
+                current.remove(current.size()-1);
             }
         }
     }
-
-
-    /**
-     * https://leetcode.com/problems/permutations-ii/discuss/18594/Really-easy-Java-solution-much-easier-than-the-solutions-with-very-high-vote
-     */
-    public List<List<Integer>> permuteUnique3(int[] nums) {
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
-        if(nums==null || nums.length==0) return res;
-        boolean[] used = new boolean[nums.length];
-        List<Integer> list = new ArrayList<Integer>();
-        Arrays.sort(nums);
-        dfs(nums, used, list, res);
-        return res;
-    }
-
-    public void dfs(int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> res){
-        if(list.size()==nums.length){
-            res.add(new ArrayList<Integer>(list));
-            return;
-        }
-        for(int i=0;i<nums.length;i++){
-            if(used[i]) continue;
-            if(i>0 &&nums[i-1]==nums[i] && !used[i-1]) continue;
-            used[i]=true;
-            list.add(nums[i]);
-            dfs(nums,used,list,res);
-            used[i]=false;
-            list.remove(list.size()-1);
-        }
-    }
-
-
-    /**
-     * https://leetcode.com/problems/permutations-ii/discuss/18601/Short-iterative-Java-solution
-     */
-    public List<List<Integer>> permuteUnique4s(int[] num) {
-        LinkedList<List<Integer>> res = new LinkedList<>();
-        res.add(new ArrayList<>());
-        for (int i = 0; i < num.length; i++) {
-            Set<String> cache = new HashSet<>();
-            while (res.peekFirst().size() == i) {
-                List<Integer> l = res.removeFirst();
-                for (int j = 0; j <= l.size(); j++) {
-                    List<Integer> newL = new ArrayList<>(l.subList(0,j));
-                    newL.add(num[i]);
-                    newL.addAll(l.subList(j,l.size()));
-                    if (cache.add(newL.toString())) res.add(newL);
-                }
-            }
-        }
-        return res;
-    }
-
-
 }
+
+*****************************************************************
+class Solution {
+    private List<List<Integer>> ans = new ArrayList<>();
+
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<Integer> list = toList(nums);
+
+        backtrack(list, 0);
+
+        return ans;
+    }
+
+    private List<Integer> toList(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+
+        for (int num : nums) {
+            list.add(num);
+        }
+
+        return list;
+    }
+
+    private void backtrack(List<Integer> nums, int pos) {
+        if (pos == nums.size()) {
+            ans.add(new ArrayList<>(nums));
+        }
+
+		// Hash also works, but slower for testcases they have right now
+        List<Integer> used = new ArrayList<>();
+
+        // select nums[pos] as start point for nums from pos to the end
+        for (int i = pos; i < nums.size(); i++) {
+            if (!used.contains(nums.get(i))) {
+                used.add(nums.get(i));
+
+                Collections.swap(nums, pos, i);
+                backtrack(nums, pos + 1);
+                Collections.swap(nums, pos, i);
+            }
+        }
+    }
+}
+
