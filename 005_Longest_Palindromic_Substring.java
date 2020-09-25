@@ -47,7 +47,34 @@ class Solution {
     }
 }
 
+****************************************************************************************
+class Solution {
+    public String longestPalindrome(String s) {
+        int i = 0, j = 0, max = 0;
+        String ans = "";
+        while (i < s.length()) {
+            j = i;
+			// Traversal optimization: 
+			// Propagation from "center" from the sides of grouped same characters
+            while (j < s.length()-1 && s.charAt(i) == s.charAt(j+1)) {
+                j++;
+            }
+            int left = i, nexti = j+1;
+            while (left > 0 && j < s.length()-1 && s.charAt(left-1) == s.charAt(j+1)) {
+                left--;
+                j++;
+            }
+            if (j-left+1 > max){
+                max = j-left+1;
+                ans = s.substring(left, j+1);
+            }
+            i = nexti;
+        }
+        return ans;
+    }
+}
 
+****************************************************************************************************
     // ManachersAlgorithm
     // https://en.wikipedia.org/wiki/Longest_palindromic_substring
     // public String longestPalindrome(String s) {
