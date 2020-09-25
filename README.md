@@ -28,11 +28,6 @@ Java is a set of computer software and specifications developed by James Gosling
 
 # leetcode-java
 
-|   Easy  |  Medium | Hard |  -  |
-|:-------:|:-------:|:----:|:---:|
-|   142   |   292   |  92  | 12  |
-
-
 | Question | Solution | Difficulty |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------:|:----------:|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/001_Two_Sum.java) | Easy |
