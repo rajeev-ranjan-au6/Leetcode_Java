@@ -30,7 +30,7 @@ Java is a set of computer software and specifications developed by James Gosling
 
 | Question | Solution | Difficulty |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------:|:----------:|
-| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/001_Two_Sum.java) | Easy |  Array / Hash Table | 
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/001_Two_Sum.java) | Easy |
 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/002_Add_Two_Numbers.java) | Medium |
 | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/003_LongestSubstringWithoutRepeatingCharacters3.java) | Medium |
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/004_Median_of_Two_Sorted_Arrays.java) | Hard |
