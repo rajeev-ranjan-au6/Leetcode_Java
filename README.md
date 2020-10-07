@@ -75,51 +75,50 @@ Java is a set of computer software and specifications developed by James Gosling
 | [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/048_RotateImage48.java) | Medium |
 | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/049_GroupAnagrams49.java) | Medium |
 | [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/050_PowXN50.java) | Medium |
-| [51. N-Queens](https://leetcode.com/problems/n-queens/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NQueens51.java) | Hard |
-| [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NQueensII52.java) | Hard |
-| [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MaximumSubarray53.java) | Easy |
-| [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SpiralMatrix54.java) | Medium |
-| [55. Jump Game](https://leetcode.com/problems/jump-game/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/JumpGame55.java) | Medium |
-| [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MergeIntervals56.java) | Medium |
-| [57. Insert Interval](https://leetcode.com/problems/insert-interval/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/InsertInterval57.java) | Hard |
-| [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SpiralMatrixII59.java) | Medium |
-| [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PermutationSequence60.java) | Medium |
-| [61. Rotate List](https://leetcode.com/problems/rotate-list/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RotateList61.java) | Medium |
-| [62. Unique Paths](https://leetcode.com/problems/unique-paths/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/UniquePaths62.java) | Medium |
-| [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/UniquePathsII63.java) | Medium |
-| [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MinimumPathSum64.java) | Medium |
-| [65. Valid Number](https://leetcode.com/problems/valid-number/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ValidNumber65.java) | Hard |
-| [66. Plus One](https://leetcode.com/problems/plus-one/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PlusOne66.java) | Easy |
-| [67. Add Binary](https://leetcode.com/problems/add-binary/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/AddBinary67.java) | Easy |
-| [68. Text Justification](https://leetcode.com/problems/text-justification/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/TextJustification68.java) | Hard |
-| [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SqrtX69.java) | Easy |
-| [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ClimbingStairs70.java) | Easy |
-| [71. Simplify Path](https://leetcode.com/problems/simplify-path/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SimplifyPath71.java) | Medium |
-| [72. Edit Distance](https://leetcode.com/problems/edit-distance/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/EditDistance72.java) | Hard |
-| [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SetMatrixZeroes73.java) | Medium |
-| [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchA2DMatrix74.java) | Medium |
-| [75. Sort Colors](https://leetcode.com/problems/sort-colors/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SortColors75.java) | Medium |
-| [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MinimumWindowSubstring76.java) | Hard |
-| [78. Subsets](https://leetcode.com/problems/subsets/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/Subsets78.java) | Medium |
-| [79. Word Search](https://leetcode.com/problems/word-search/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/WordSearch79.java) | Medium |
-| [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RemoveDuplicatesFromSortedArrayII80.java) | Medium |
-| [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SearchInRotatedSortedArrayII81.java) | Medium |
-| [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RemoveDuplicatesFromSortedListII82.java) | Medium |
-| [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RemoveDuplicatesFromSortedList83.java) | Easy |
-| [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LargestRectangleInHistogram84.java) | Hard |
-| [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LargestRectangleInHistogram84.java) | Hard |
-| [86. Partition List](https://leetcode.com/problems/partition-list/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PartitionList86.java) | Medium |
-| [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MergeSortedArray88.java) | Easy |
-| [90. Subsets II](https://leetcode.com/problems/subsets-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SubsetsII90.java) | Medium |
-| [91. Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/DecodeWays91.java) | Medium |
-| [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ReverseLinkedListII92.java) | Medium |
-| [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/RestoreIPAddresses93.java) | Medium |
-| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/BinaryTreeInorderTraversal94.java) | Medium |
-| [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/UniqueBinarySearchTreesII95.java) | Medium |
-| [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/UniqueBinarySearchTrees96.java) | Medium |
-| [97. Interleaving String](https://leetcode.com/problems/interleaving-string/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/InterleavingString97.java) | Hard |
-| [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ValidateBinarySearchTree98.java) | Medium |
-| [100. Same Tree](https://leetcode.com/problems/same-tree/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SameTree100.java) | Easy |
+| [51. N-Queens](https://leetcode.com/problems/n-queens/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/051_NQueens51.java) | Hard |
+| [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/052_NQueensII52.java) | Hard |
+| [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/053_MaximumSubarray53.java) | Easy |
+| [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/054_SpiralMatrix54.java) | Medium |
+| [55. Jump Game](https://leetcode.com/problems/jump-game/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/055_JumpGame55.java) | Medium |
+| [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/056_MergeIntervals56.java) | Medium |
+| [57. Insert Interval](https://leetcode.com/problems/insert-interval/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/057_InsertInterval57.java) | Hard |
+| [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/059_SpiralMatrixII59.java) | Medium |
+| [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/060_PermutationSequence60.java) | Medium |
+| [61. Rotate List](https://leetcode.com/problems/rotate-list/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/061_AddBinary.java) | Medium |
+| [62. Unique Paths](https://leetcode.com/problems/unique-paths/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/062_UniquePaths62.java) | Medium |
+| [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/063_UniquePathsII63.java) | Medium |
+| [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/064_MinimumPathSum64.java) | Medium |
+| [65. Valid Number](https://leetcode.com/problems/valid-number/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/065_ValidNumber65.java) | Hard |
+| [66. Plus One](https://leetcode.com/problems/plus-one/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/066_PlusOne66.java) | Easy |
+| [68. Text Justification](https://leetcode.com/problems/text-justification/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/068_TextJustification68.java) | Hard |
+| [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/069_SqrtX69.java) | Easy |
+| [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/070_ClimbingStairs70.java) | Easy |
+| [71. Simplify Path](https://leetcode.com/problems/simplify-path/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/071_SimplifyPath71.java) | Medium |
+| [72. Edit Distance](https://leetcode.com/problems/edit-distance/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/072_EditDistance72.java) | Hard |
+| [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/073_SetMatrixZeroes73.java) | Medium |
+| [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/074_SearchA2DMatrix74.java) | Medium |
+| [75. Sort Colors](https://leetcode.com/problems/sort-colors/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/075_SortColors75.java) | Medium |
+| [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/076_MinimumWindowSubstring76.java) | Hard |
+| [78. Subsets](https://leetcode.com/problems/subsets/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/078_Subsets78.java) | Medium |
+| [79. Word Search](https://leetcode.com/problems/word-search/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/079_WordSearch79.java) | Medium |
+| [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/080_RemoveDuplicatesFromSortedArrayII80.java) | Medium |
+| [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/081_SearchInRotatedSortedArrayII81.java) | Medium |
+| [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/082_RemoveDuplicatesFromSortedListII82.java) | Medium |
+| [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/083_RemoveDuplicatesFromSortedList83.java) | Easy |
+| [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/084_LargestRectangleInHistogram84.java) | Hard |
+| [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/085_MaximalRectangle85.java) | Hard |
+| [86. Partition List](https://leetcode.com/problems/partition-list/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/086_PartitionList86.java) | Medium |
+| [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/088_MergeSortedArray88.java) | Easy |
+| [90. Subsets II](https://leetcode.com/problems/subsets-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/090_SubsetsII90.java) | Medium |
+| [91. Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/091_DecodeWays91.java) | Medium |
+| [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/092_ReverseLinkedListII92.java) | Medium |
+| [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/093_RestoreIPAddresses93.java) | Medium |
+| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/094_BinaryTreeInorderTraversal94.java) | Medium |
+| [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/095_UniqueBinarySearchTreesII95.java) | Medium |
+| [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/096_UniqueBinarySearchTrees96.java) | Medium |
+| [97. Interleaving String](https://leetcode.com/problems/interleaving-string/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/097_InterleavingString97.java) | Hard |
+| [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/098_ValidateBinarySearchTree98.java) | Medium |
+| [100. Same Tree](https://leetcode.com/problems/same-tree/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/100_SameTree100.java) | Easy |
 | [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SymmetricTree101.java) | Easy |
 | [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/BinaryTreeLevelOrderTraversal102.java) | Medium |
 | [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/BinaryTreeZigzagLevelOrderTraversal103.java) | Medium |
