@@ -340,22 +340,11 @@ Java is a set of computer software and specifications developed by James Gosling
 | [394. Decode String](https://leetcode.com/problems/decode-string/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/394_DecodeString394.java) | Medium |
 | [396. Rotate Function](https://leetcode.com/problems/rotate-function/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/396_RotateFunction396.java) | Medium |
 | [399. Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/399_EvaluateDivision399.java) | Medium |
-| [403. Frog Jump](https://leetcode.com/problems/frog-jump/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/FrogJump403.java) | Hard |
-| [405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ConvertANumberToHexadecimal405.java) | Easy |
-| [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/QueueReconstructionByHeight406.java) | Medium |
-| [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/TrappingRainWaterII407.java) | Medium |
-| [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ValidWordAbbreviation408.java) | Easy |
-| [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestPalindrome409.java) | Easy |
-| [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SplitArrayLargestSum410.java) | Hard |
-| [412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/FizzBuzz412.java) | Easy |
-| [414. Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ThirdMaximumNumber414.java) | Easy |
-| [415. Add Strings](https://leetcode.com/problems/add-strings/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/AddStrings415.java) | Easy |
-| [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PartitionEqualSubsetSum416.java) | Medium |
-| [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/PacificAtlanticWaterFlow417.java) | Medium |
-| [418. Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/SentenceScreenFitting418.java) | Medium |
-| [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/MaximumXOROfTwoNumbersInAnArray421.java) | Medium |
-| [423. Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ReconstructOriginalDigitsFromEnglish423.java) | Medium |
-| [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/LongestRepeatingCharacterReplacement424.java) | Medium |
-| [425. Word Squares](https://leetcode.com/problems/word-squares/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/WordSquares425.java) | Hard |
-| [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/ConstructQuadTree427.java) | Easy |
-| [429. N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | [Solution](https://github.com/fluency03/leetcode-java/blob/master/src/NaryTreeLevelOrderTraversal429.java) | Easy |
+| [403. Frog Jump](https://leetcode.com/problems/frog-jump/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/403_FrogJump403.java) | Hard |
+| [405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/405_Convert_a_Number_to_Hexadecimal.java) | Easy |
+| [406. Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/406_QueueReconstructionByHeight406.java) | Medium |
+| [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/407_TrappingRainWaterII407.java) | Medium |
+| [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/408_ValidWordAbbreviation408.java) | Easy |
+| [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/409_Longest_Palindrome.java) | Easy |
+| [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | [Solution](https://github.com/rajeev-ranjan-au6/Leetcode_Java/blob/master/410_SplitArrayLargestSum410.java) | Hard |
+
